@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styled Webpage with Alert</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f2f5f9;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: pink;
+      max-width: 700px;
+      margin-top: 60px;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    h1, h2, h3 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    img {
+      max-width: 50%;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .alert-btn {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #e67e22;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .alert-btn:hover {
+      background-color: #d35400;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome to My Webpage</h1>
+
+    <h2>About Me</h2>
+    <p>Hi, I'm Mahi! I enjoy designing and building web pages using HTML, CSS, and JavaScript. This is a simple example with some modern styling.</p>
+
+    <h3>My Favorite Animal</h3>
+    <p>I love cats for their curiosity and calm nature. Here's a picture of one:</p>
+    <img src="My photo.jpg" alt="My Local photo">
+
+    <h3>Helpful Resources</h3>
+    <p>These websites are great for learning web development:</p>
+    <ul>
+      <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+      <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+      <li><a href="https://freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+    </ul>
+
+    <button class="alert-btn" onclick="showAlert()">Click Me for Alert</button>
+  </div>
+
+  <script>
+    function showAlert() {
+      alert("Hello! meow meow.");
+    }
+  </script>
+
+</body>
+</html>
